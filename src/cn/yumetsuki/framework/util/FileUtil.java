@@ -40,7 +40,7 @@ public class FileUtil {
         try {
             BufferedWriter writer = new BufferedWriter(
                     new OutputStreamWriter(
-                            new FileOutputStream(file)
+                            new FileOutputStream(file, true)
                     )
             );
             writer.newLine();
